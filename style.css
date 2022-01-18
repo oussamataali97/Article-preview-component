@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    Font-size: 13px;
+    background: hsl(210, 46%, 95%);
+}
+
+.container{
+    display: flex;
+    max-width: 800px;
+    margin:10rem auto;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+    transition: .1s ease-in;
+    box-shadow: 0px 6px 20px #c9c9c9;
+}
+.container .img img{
+    max-width: 300px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    
+    
+}
+
+
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:30px;
+    
+    
+}
+
+
+
+.content .bold {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:hsl(217, 19%, 35%);
+}
+
+.content p{
+    padding:10px;
+    color:hsl(212, 23%, 69%)
+      
+  }
+
+.content img{
+    max-width: 80px;
+}
+
+.sub-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sub-content img{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.pic{
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name h4{
+    color:hsl(217, 19%, 35%);
+    font-weight: bold;
+}
+
+.name span{
+    color:hsl(214, 17%, 51%)
+
+}
+.sub-content a  {
+background:hsl(210, 46%, 95%);
+
+padding:5px;
+border-radius: 20px;
+}
+
+
+@media(max-width:768px){
+    .container{
+        display: flex;
+        max-width: 400px;
+        flex-direction: column;
+        margin:4rem auto;
+        background: #fff;
+        border-radius: 20px;
+        transition: .1s linear;
+        box-shadow: 0px 6px 20px #c9c9c9;        
+    }
+
+    .container .img img{
+        max-width: 100%;
+        border-radius: 0;
+        background-size: 20px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .sub-content{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+
+        align-items: center;
+        margin: 15px auto;
+        
+    }
+
+    .pic{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
